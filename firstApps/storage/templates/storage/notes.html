@@ -1,0 +1,13 @@
+{% extends 'basic/basic.html' %}
+
+
+{% block main %}
+    <h1>Testing</h1>
+    
+    {% for note in notes %}
+        <h2>{{ note.title }}</h2>
+        <p>{{ note.description }}</p>
+    {% endfor %}
+        
+{% endblock main %}
+    

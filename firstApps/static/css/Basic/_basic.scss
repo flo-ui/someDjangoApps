@@ -1,0 +1,138 @@
+
+//Functions and Mixins
+$medium: 480px;
+$large: 1200px;
+
+@mixin md-size{
+    @media (min-width: #{$medium}){
+        @content;
+    }
+}
+
+@mixin lg-size{
+    @media (min-width: #{$large}){
+        @content;
+    }
+}
+
+//General Styling
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    background-color: color(bg);
+    height: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    //background-color: color(tertiary);
+}
+
+a, h1, h2, h3{
+    text-decoration: none;
+    color: color(text);
+    font-weight: 400;
+}
+
+//Styling of the different Parts
+
+//header
+
+header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    
+    height: 65px;
+    background-color:color(primary);
+    font-size: 2rem;
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .login{
+        font-size: .5rem;
+    }
+    a{
+        padding: 10px 2rem;
+        
+    }
+}
+
+//Main content
+
+.main{
+    box-sizing: border-box;
+    min-height: calc(100vh - 125px);
+    text-align: center;
+    h1{
+        margin: 0;
+        padding: 1rem;
+        font-weight: 400;
+    }
+
+    
+
+    .card-section{
+        width: inherit;
+        @include lg-size{
+            display: grid;
+            grid-template-columns: 1fr 1fr; ;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    .card{
+        background-color: color(secondary);
+        height: 160px;
+        width: 240px;
+        margin: 1.5rem auto;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md-size{
+            height: 220px;
+            width: 360px;
+        }
+
+
+
+        h2{
+            position: relative;
+            color: color(bg);
+        }   
+    }
+}
+
+//footer
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: color(primary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+        padding: 0 3rem;
+        text-align: center;
+    }
+}
+
+//Polls
+.poll{
+    background-color: color(tertiary);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
