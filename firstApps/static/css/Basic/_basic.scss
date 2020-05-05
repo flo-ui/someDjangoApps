@@ -89,7 +89,7 @@ header{
         }
     }
 
-    .card{
+    .home-card{
         background-color: color(secondary);
         height: 160px;
         width: 240px;
@@ -129,10 +129,3 @@ footer{
     }
 }
 
-//Polls
-.poll{
-    background-color: color(tertiary);
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 1rem;
-}

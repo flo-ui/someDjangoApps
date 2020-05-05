@@ -3,5 +3,6 @@ from .models import *
 
 # Create your views here.
 def notes(request):
-
-    return render(request, 'storage/notes.html',{})
+    notes = Note.objects.all()
+    context = {'notes': notes}
+    return render(request, 'storage/notes.html', context)

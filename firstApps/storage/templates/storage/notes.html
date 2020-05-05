@@ -2,12 +2,14 @@
 
 
 {% block main %}
-    <h1>Testing</h1>
-    
-    {% for note in notes %}
-        <h2>{{ note.title }}</h2>
-        <p>{{ note.description }}</p>
-    {% endfor %}
-        
+    <h1>These are all the notes you have taken</h1>
+    <div class="note-grid">
+        {% for note in notes %}
+            <div class="card">
+                <h2>{{ note.title }}</h2>
+                <p>{{ note.description }}</p>
+            </div>
+        {% endfor %}
+    </div>  
 {% endblock main %}
     

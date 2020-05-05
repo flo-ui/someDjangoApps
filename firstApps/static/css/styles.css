@@ -75,7 +75,7 @@ header a {
   }
 }
 
-.main .card {
+.main .home-card {
   background-color: #3788f1;
   height: 160px;
   width: 240px;
@@ -93,13 +93,13 @@ header a {
 }
 
 @media (min-width: 480px) {
-  .main .card {
+  .main .home-card {
     height: 220px;
     width: 360px;
   }
 }
 
-.main .card h2 {
+.main .home-card h2 {
   position: relative;
   color: #f5f5f5;
 }
@@ -126,10 +126,52 @@ footer a {
   text-align: center;
 }
 
+.card {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 3px solid #635a5a;
+  text-align: initial;
+}
+
+.card h2 {
+  background-color: #3788f1;
+  display: inline;
+  padding: .3rem;
+  border-radius: .4rem;
+}
+
 .poll {
   background-color: #ffa45c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem;
   border-radius: 1rem;
   margin: 1rem;
+}
+
+.poll a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .note-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

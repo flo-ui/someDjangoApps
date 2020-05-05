@@ -1,0 +1,6 @@
+.note-grid{
+    @include lg-size{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
