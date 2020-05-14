@@ -3,9 +3,11 @@ $colors: (
     secondary: #3788f1,//#0f72cf,
     tertiary: #ffa45c,
     text: #121213,
+    dmtext:#d8d8d8,
     bg:#f5f5f5,// rgb(244, 247, 243),
+    dmbg: #121212,
 );
 
-@function color($colorreq){
+@function color($colorreq){ //function to get the requested color variable
     @return map-get($colors, $colorreq);
 }
