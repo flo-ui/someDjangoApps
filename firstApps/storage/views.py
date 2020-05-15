@@ -2,10 +2,10 @@ from django.shortcuts import render
 from .models import * 
 
 # Create your views here.
-def notes(request):
+def index(request):
     notes = Note.objects.all()
     context = {'notes': notes}
-    return render(request, 'storage/notes.html', context)
+    return render(request, 'storage/index.html', context)
 
 def fridgeitems(request):
     items = FridgeItem.objects.all()

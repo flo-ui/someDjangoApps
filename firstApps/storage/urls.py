@@ -1,7 +1,9 @@
 from django.urls import path
 from . import views
 
+
+app_name = 'storage'
 urlpatterns = [
-    path('',views.notes, name='notes'),
+    path('',views.index, name='index'),
     path('items/', views.fridgeitems, name='fridgeitems')
 ]

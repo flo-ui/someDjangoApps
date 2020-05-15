@@ -189,6 +189,25 @@ footer a {
           align-items: center;
 }
 
+.poll-results {
+  padding: 2rem;
+  border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: #159866;
+}
+
+.poll-results .poll-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 @media (min-width: 1200px) {
   .note-grid {
     display: -ms-grid;

@@ -2,32 +2,36 @@
 
 {% block main %}
 
-<h1>Welcome to <nobr>Code-in-Mind</nobr></h1>
+<h1>Welcome to SomeDjangoApps</h1>
 <hr>
+<h2>This is a collection of little Django 3.0 Apps</h2>
+
 <h3>What are you interested in?</h3>
+
+<!--All the installed Apps-->
 
 <div class="card-section">
     <div class="home-card">
-        <a href="polls/">
-            <h2>Blog</h2>
+        <a href="{% url 'polls:index' %}">
+            <h2>Polls</h2>
         </a>
     </div>
 
     <div class="home-card">
-        <a href="polls/">
-            <h2>Voting</h2>
+        <a href="#">
+            <h2>Users</h2>
         </a>
     </div>
 
     <div class="home-card">
-        <a href="storage/">
-            <h2>Storage</h2>
+        <a href="{% url 'storage:index' %}">
+            <h2>Storage systems</h2>
         </a>
     </div>
 
     <div class="home-card">
         <a href="admin/">
-            <h2>Development</h2>
+            <h2>Admin</h2>
         </a>
     </div>
 </div>
