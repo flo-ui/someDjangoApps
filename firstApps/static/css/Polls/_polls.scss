@@ -1,18 +1,21 @@
 //Polls
-.poll{
-    background-color: color(tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    a {
+
+.poll-list{
+    .poll{
+        background-color: color(tertiary);
+        width: 50%;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 1rem auto;
+        a {
+            display: flex;
+            align-items: center;
+        }
     }
 }
-
 .poll-results{
     padding: 2rem;
     border-radius: 2rem;

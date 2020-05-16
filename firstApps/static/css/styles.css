@@ -59,7 +59,10 @@ header .container {
 }
 
 header .login {
-  font-size: .5rem;
+  font-size: 1.3rem;
+  padding: .4rem;
+  background-color: #f78f3a;
+  border-radius: .5rem;
 }
 
 header a {
@@ -164,8 +167,9 @@ footer a {
   border-radius: .4rem;
 }
 
-.poll {
-  background-color: #ffa45c;
+.poll-list .poll {
+  background-color: #f78f3a;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,10 +181,10 @@ footer a {
           justify-content: center;
   padding: 2rem;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
-.poll a {
+.poll-list .poll a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,5 +219,22 @@ footer a {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+}
+
+.user-creation {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.user-creation fieldset legend {
+  margin: 0.5rem auto 0 auto;
+}
+
+.user-log-in a {
+  margin-top: 3rem;
+  padding: .5rem 2rem;
+  background-color: #3788f1;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+{% extends 'basic/basic.html' %}
+
+{% block main %}
+    <h1>{{ user.username }}</h1>
+    <h2>{{ user.email }}</h2>
+
+    <img src="{{ user.profile.image.url }}">
+
+    <form method="POST" enctype="multipart/form-data" action="#">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Profile info</legend>
+            {{ u_form.as_p }}
+            {{ p_form.as_p }}
+            <button type="submit" class="submit-btn">Update</button>
+        </fieldset>
+    </form>
+
+{% endblock main %}

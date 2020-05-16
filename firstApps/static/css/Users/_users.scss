@@ -1,0 +1,19 @@
+.user-creation{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+
+    fieldset legend{
+        margin: 0.5rem auto 0 auto;
+    }
+
+}
+
+.user-log-in{
+    a{
+        margin-top: 3rem;
+        padding: .5rem 2rem;
+        background-color: color(secondary);
+        border-radius: 1rem;
+    }
+}

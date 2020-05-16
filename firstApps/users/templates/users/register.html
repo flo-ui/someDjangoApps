@@ -1,0 +1,19 @@
+{% extends 'basic/basic.html' %}
+
+{% block main %}
+<div class="user-creation">
+    <form method="POST" action="#">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Join today</legend>
+            {{ form.as_p }}
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </fieldset>
+    </form>
+</div>
+<div class="user-log-in">
+   <p>Already have an account?</p> <a href="{% url 'users:login' %}">Log in</a>
+</div>
+
+
+{% endblock main %}

@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'home',
     'storage',
-    'users',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +111,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
-
+MEDIA_ROOT= os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+LOGIN_REDIRECT_URL = 'home:home'
+LOGIN_URL='users:login'

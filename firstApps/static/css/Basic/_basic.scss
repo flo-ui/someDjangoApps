@@ -81,7 +81,10 @@ header{
         align-items: center;
     }
     .login{
-        font-size: .5rem;
+        font-size: 1.3rem;
+        padding: .4rem;
+        background-color: color(tertiary);
+        border-radius: .5rem;
     }
     a{
         padding: 10px 2rem;
